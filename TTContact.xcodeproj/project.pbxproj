@@ -22,6 +22,12 @@
 		F8A5BF5518CF4EF6008FFF7D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A5BF3918CF4EF6008FFF7D /* CoreData.framework */; };
 		F8A5BF5D18CF4EF6008FFF7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A5BF5B18CF4EF6008FFF7D /* InfoPlist.strings */; };
 		F8A5BF5F18CF4EF6008FFF7D /* TTContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A5BF5E18CF4EF6008FFF7D /* TTContactTests.m */; };
+		F8A5BF7A18CF5A0A008FFF7D /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A5BF7818CF5A0A008FFF7D /* TTMainViewController.m */; };
+		F8A5BF7B18CF5A0A008FFF7D /* TTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A5BF7918CF5A0A008FFF7D /* TTMainViewController.xib */; };
+		F8C3936318CF5FBB00A437A4 /* TTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C3936118CF5FBB00A437A4 /* TTRegisterViewController.m */; };
+		F8C3936418CF5FBB00A437A4 /* TTRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C3936218CF5FBB00A437A4 /* TTRegisterViewController.xib */; };
+		F8C3936D18CF5FF300A437A4 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C3936B18CF5FF300A437A4 /* TTLoginViewController.m */; };
+		F8C3936E18CF5FF300A437A4 /* TTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C3936C18CF5FF300A437A4 /* TTLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		F8A5BF5A18CF4EF6008FFF7D /* TTContactTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTContactTests-Info.plist"; sourceTree = "<group>"; };
 		F8A5BF5C18CF4EF6008FFF7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8A5BF5E18CF4EF6008FFF7D /* TTContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTContactTests.m; sourceTree = "<group>"; };
+		F8A5BF7718CF5A0A008FFF7D /* TTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
+		F8A5BF7818CF5A0A008FFF7D /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
+		F8A5BF7918CF5A0A008FFF7D /* TTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTMainViewController.xib; sourceTree = "<group>"; };
+		F8C3936018CF5FBB00A437A4 /* TTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRegisterViewController.h; sourceTree = "<group>"; };
+		F8C3936118CF5FBB00A437A4 /* TTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRegisterViewController.m; sourceTree = "<group>"; };
+		F8C3936218CF5FBB00A437A4 /* TTRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTRegisterViewController.xib; sourceTree = "<group>"; };
+		F8C3936A18CF5FF300A437A4 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
+		F8C3936B18CF5FF300A437A4 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
+		F8C3936C18CF5FF300A437A4 /* TTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,8 @@
 		F8A5BF3B18CF4EF6008FFF7D /* TTContact */ = {
 			isa = PBXGroup;
 			children = (
+				F8A5BF7318CF59F2008FFF7D /* Class */,
+				F8A5BF7518CF59F2008FFF7D /* Resources */,
 				F8A5BF4418CF4EF6008FFF7D /* TTAppDelegate.h */,
 				F8A5BF4518CF4EF6008FFF7D /* TTAppDelegate.m */,
 				F8A5BF4A18CF4EF6008FFF7D /* Images.xcassets */,
@@ -151,6 +168,45 @@
 				F8A5BF5B18CF4EF6008FFF7D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8A5BF7318CF59F2008FFF7D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F8A5BF7418CF59F2008FFF7D /* Third */,
+				F8A5BF7718CF5A0A008FFF7D /* TTMainViewController.h */,
+				F8A5BF7818CF5A0A008FFF7D /* TTMainViewController.m */,
+				F8A5BF7918CF5A0A008FFF7D /* TTMainViewController.xib */,
+				F8C3936018CF5FBB00A437A4 /* TTRegisterViewController.h */,
+				F8C3936118CF5FBB00A437A4 /* TTRegisterViewController.m */,
+				F8C3936218CF5FBB00A437A4 /* TTRegisterViewController.xib */,
+				F8C3936A18CF5FF300A437A4 /* TTLoginViewController.h */,
+				F8C3936B18CF5FF300A437A4 /* TTLoginViewController.m */,
+				F8C3936C18CF5FF300A437A4 /* TTLoginViewController.xib */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F8A5BF7418CF59F2008FFF7D /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		F8A5BF7518CF59F2008FFF7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8A5BF7618CF59F2008FFF7D /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8A5BF7618CF59F2008FFF7D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A5BF4018CF4EF6008FFF7D /* InfoPlist.strings in Resources */,
+				F8C3936418CF5FBB00A437A4 /* TTRegisterViewController.xib in Resources */,
+				F8A5BF7B18CF5A0A008FFF7D /* TTMainViewController.xib in Resources */,
+				F8C3936E18CF5FF300A437A4 /* TTLoginViewController.xib in Resources */,
 				F8A5BF4B18CF4EF6008FFF7D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C3936D18CF5FF300A437A4 /* TTLoginViewController.m in Sources */,
 				F8A5BF4918CF4EF6008FFF7D /* TTContact.xcdatamodeld in Sources */,
+				F8A5BF7A18CF5A0A008FFF7D /* TTMainViewController.m in Sources */,
+				F8C3936318CF5FBB00A437A4 /* TTRegisterViewController.m in Sources */,
 				F8A5BF4618CF4EF6008FFF7D /* TTAppDelegate.m in Sources */,
 				F8A5BF4218CF4EF6008FFF7D /* main.m in Sources */,
 			);
@@ -454,6 +516,7 @@
 				F8A5BF6418CF4EF6008FFF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8A5BF6518CF4EF6008FFF7D /* Build configuration list for PBXNativeTarget "TTContactTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +525,7 @@
 				F8A5BF6718CF4EF6008FFF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

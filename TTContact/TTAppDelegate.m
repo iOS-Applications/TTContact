@@ -7,6 +7,7 @@
 //
 
 #import "TTAppDelegate.h"
+#import "TTMainViewController.h"
 
 @implementation TTAppDelegate
 
@@ -19,6 +20,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    TTMainViewController *mainController = [[TTMainViewController alloc] initWithNibName:@"TTMainViewController" bundle:nil];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mainController];
     [self.window makeKeyAndVisible];
     return YES;
 }
