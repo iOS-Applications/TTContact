@@ -179,7 +179,6 @@
 		F8A5BF7318CF59F2008FFF7D /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				F8A5BF7418CF59F2008FFF7D /* Third */,
 				F8A5BF7718CF5A0A008FFF7D /* TTMainViewController.h */,
 				F8A5BF7818CF5A0A008FFF7D /* TTMainViewController.m */,
 				F8A5BF7918CF5A0A008FFF7D /* TTMainViewController.xib */,
@@ -191,13 +190,6 @@
 				F8C3936C18CF5FF300A437A4 /* TTLoginViewController.xib */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		F8A5BF7418CF59F2008FFF7D /* Third */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Third;
 			sourceTree = "<group>";
 		};
 		F8A5BF7518CF59F2008FFF7D /* Resources */ = {
