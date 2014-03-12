@@ -21,6 +21,15 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        NSString *url = @"http://mrobot.pcbaby.com.cn/v3/cmt/new_topics/12958224?articleId=1147610&reverse=0&pageNo=1&pageSize=20#";
+        [manager GET:url
+          parameters:nil
+             success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"JSON: %@", responseObject);
+        }   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
     }
     return self;
 }
