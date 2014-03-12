@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E62DD203-EEDA-4F17-832B-3D530F7916A1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TTContact</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B5A15980-5484-49DA-B86F-F64F75B168E0</key>
+		<string>https://github.com/Telite/TTContact.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TTContact.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B5A15980-5484-49DA-B86F-F64F75B168E0</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Telite/TTContact.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B5A15980-5484-49DA-B86F-F64F75B168E0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B5A15980-5484-49DA-B86F-F64F75B168E0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TTContact</string>
+		</dict>
+	</array>
+</dict>
+</plist>
