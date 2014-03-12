@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3D1D94585B4172A589F3CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FEC247CD7B4538ADF4C7FE /* libPods.a */; };
 		F8A5BF3418CF4EF6008FFF7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A5BF3318CF4EF6008FFF7D /* Foundation.framework */; };
 		F8A5BF3618CF4EF6008FFF7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A5BF3518CF4EF6008FFF7D /* CoreGraphics.framework */; };
 		F8A5BF3818CF4EF6008FFF7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A5BF3718CF4EF6008FFF7D /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72FEC247CD7B4538ADF4C7FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73727A0384A4B6E9960FC58 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F8A5BF3018CF4EF6008FFF7D /* TTContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A5BF3318CF4EF6008FFF7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8A5BF3518CF4EF6008FFF7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,7 @@
 				F8A5BF3A18CF4EF6008FFF7D /* CoreData.framework in Frameworks */,
 				F8A5BF3818CF4EF6008FFF7D /* UIKit.framework in Frameworks */,
 				F8A5BF3418CF4EF6008FFF7D /* Foundation.framework in Frameworks */,
+				5A3D1D94585B4172A589F3CF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,7 @@
 				F8A5BF5818CF4EF6008FFF7D /* TTContactTests */,
 				F8A5BF3218CF4EF6008FFF7D /* Frameworks */,
 				F8A5BF3118CF4EF6008FFF7D /* Products */,
+				E73727A0384A4B6E9960FC58 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +128,7 @@
 				F8A5BF3718CF4EF6008FFF7D /* UIKit.framework */,
 				F8A5BF3918CF4EF6008FFF7D /* CoreData.framework */,
 				F8A5BF5118CF4EF6008FFF7D /* XCTest.framework */,
+				72FEC247CD7B4538ADF4C7FE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A5BF6218CF4EF6008FFF7D /* Build configuration list for PBXNativeTarget "TTContact" */;
 			buildPhases = (
+				1055BE07A04541218BD3C773 /* Check Pods Manifest.lock */,
 				F8A5BF2C18CF4EF6008FFF7D /* Sources */,
 				F8A5BF2D18CF4EF6008FFF7D /* Frameworks */,
 				F8A5BF2E18CF4EF6008FFF7D /* Resources */,
+				62A0DD576A924416A1B1FDCF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +310,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1055BE07A04541218BD3C773 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62A0DD576A924416A1B1FDCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8A5BF2C18CF4EF6008FFF7D /* Sources */ = {
@@ -429,6 +470,7 @@
 		};
 		F8A5BF6318CF4EF6008FFF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73727A0384A4B6E9960FC58 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -443,6 +485,7 @@
 		};
 		F8A5BF6418CF4EF6008FFF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73727A0384A4B6E9960FC58 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
