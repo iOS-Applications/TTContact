@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TTCommViewController.h"
-#import <CommonCrypto/CommonDigest.h>
+#import "TTContactHelper.h"
 
 @interface TTLoginViewController : TTCommViewController
 

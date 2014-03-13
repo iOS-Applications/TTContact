@@ -27,6 +27,7 @@
 
 - (void)initNavigationItems
 {
+    [super initNavigationItems];
     self.title = @"界面入口";
 }
 
