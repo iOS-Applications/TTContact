@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTCommViewController.h"
 
-@interface TTRegisterViewController : UIViewController
+@interface TTRegisterViewController : TTCommViewController
 
 @end

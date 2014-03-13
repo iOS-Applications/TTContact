@@ -23,6 +23,11 @@
     return self;
 }
 
+- (void)initNavigationItems
+{
+    self.title = @"注册通讯录";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
