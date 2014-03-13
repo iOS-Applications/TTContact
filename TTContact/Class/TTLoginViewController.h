@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @interface TTLoginViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *psdTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end

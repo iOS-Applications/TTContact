@@ -17,3 +17,6 @@
 #endif
 
 #import "AFNetworking.h"
+
+//define url
+#define LOGIN_URL @"http://heihei.com?usernanme=%@&pwd=%@"
