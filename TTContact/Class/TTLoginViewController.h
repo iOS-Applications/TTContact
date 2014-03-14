@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CommonCrypto/CommonDigest.h>
+#import "TTCommViewController.h"
+#import "TTContactHelper.h"
 
-@interface TTLoginViewController : UIViewController
+@interface TTLoginViewController : TTCommViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *psdTextField;

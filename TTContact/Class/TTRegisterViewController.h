@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTCommViewController.h"
+#import "TTContactHelper.h"
 
-@interface TTRegisterViewController : UIViewController
+@interface TTRegisterViewController : TTCommViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
+@property (weak, nonatomic) IBOutlet UITextField *psdTextField;
+@property (weak, nonatomic) IBOutlet UITextField *psdConfirmTextField;
+- (IBAction)registerButton:(id)sender;
 
 @end

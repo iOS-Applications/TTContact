@@ -23,6 +23,23 @@
     return self;
 }
 
+- (void)initNavigationItems
+{
+    [super initNavigationItems];
+    self.title = @"登录";
+}
+
+- (void)initSubviews
+{
+    [super initSubviews];
+    UIView *userLeftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, CGRectGetHeight(self.usernameTextField.frame))];
+    UIView *psdLeftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, CGRectGetHeight(self.usernameTextField.frame))];
+    self.usernameTextField.leftViewMode = UITextFieldViewModeAlways;
+    self.psdTextField.leftViewMode = UITextFieldViewModeAlways;
+    self.usernameTextField.leftView = userLeftView;
+    self.psdTextField.leftView = psdLeftView;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -51,8 +68,8 @@
                                               otherButtonTitles:nil, nil];
         [alert show];
     } else {
-        NSString *pwdMD5 = [self md5:psd];
-        NSString *url = [NSString stringWithFormat:LOGIN_URL,username,pwdMD5];
+        NSString *psdMD5 = [TTContactHelper md5:psd];
+        NSString *url = [NSString stringWithFormat:LOGIN_URL,username,psdMD5];
         NSLog(@"%@",url);
         //发起请求
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -66,24 +83,9 @@
     }
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     [self.view endEditing:YES];
 }
 
-#pragma mark - instance method
-
-//对目标字符串进行MD5加密
-- (NSString *)md5:(NSString *)str
-{
-    const char *cStr = [str UTF8String];
-    unsigned char result[16];
-    CC_MD5(cStr, strlen(cStr), result); // This is the md5 call
-    
-    return [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-                                        result[0], result[1], result[2], result[3],
-                                        result[4], result[5], result[6], result[7],
-                                        result[8], result[9], result[10], result[11],
-                                        result[12], result[13], result[14], result[15]
-                                        ];
-}
 @end

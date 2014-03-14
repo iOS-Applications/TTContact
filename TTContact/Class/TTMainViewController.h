@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTCommViewController.h"
 
-@interface TTMainViewController : UIViewController
+@interface TTMainViewController : TTCommViewController
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
