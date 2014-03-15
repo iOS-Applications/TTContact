@@ -14,4 +14,7 @@
 // MD5
 + (NSString *)md5:(NSString *)str;
 
+// CoreData
++ (NSManagedObjectContext *)managedObjectContext;
+
 @end
